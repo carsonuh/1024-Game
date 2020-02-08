@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cell()
+comment1.params=r\ c\ v
+comment1.target=Cell(int,\ int,\ int)
+comment2.params=other
+comment2.target=int\ compareTo(pack1024.Cell)
+comment2.text=\ must\ override\ equals\ to\ ensure\ List\:\:contains()\ works\r\n\ correctly\r\n
+numComments=3

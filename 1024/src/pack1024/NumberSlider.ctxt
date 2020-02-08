@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=height\ width\ winningValue
+comment0.target=void\ resizeBoard(int,\ int,\ int)
+comment0.text=\r\n\ Reset\ the\ game\ logic\ to\ handle\ a\ board\ of\ a\ given\ dimension\r\n\r\n\ @param\ height\ the\ number\ of\ rows\ in\ the\ board\r\n\ @param\ width\ the\ number\ of\ columns\ in\ the\ board\r\n\ @param\ winningValue\ the\ value\ that\ must\ appear\ on\ the\ board\ to\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ win\ the\ game\r\n\ @throws\ IllegalArgumentException\ when\ the\ winning\ value\ is\ not\ power\ of\ two\r\n\ \ or\ negative\r\n
+comment1.params=
+comment1.target=void\ reset()
+comment1.text=\r\n\ Remove\ all\ numbered\ tiles\ from\ the\ board\ and\ place\r\n\ TWO\ non-zero\ values\ at\ random\ location\r\n
+comment2.params=ref
+comment2.target=void\ setValues(int[][])
+comment2.text=\r\n\ Set\ the\ game\ board\ to\ the\ desired\ values\ given\ in\ the\ 2D\ array.\r\n\ This\ method\ should\ use\ nested\ loops\ to\ copy\ each\ element\ from\ the\r\n\ provided\ array\ to\ your\ own\ internal\ array.\ Do\ not\ just\ assign\ the\r\n\ entire\ array\ object\ to\ your\ internal\ array\ object.\ Otherwise,\ your\r\n\ internal\ array\ may\ get\ corrupted\ by\ the\ array\ used\ in\ the\ JUnit\r\n\ test\ file.\ This\ method\ is\ mainly\ used\ by\ the\ JUnit\ tester.\r\n\ @param\ ref\r\n
+comment3.params=
+comment3.target=pack1024.Cell\ placeRandomValue()
+comment3.text=\r\n\ Insert\ one\ random\ tile\ into\ an\ empty\ spot\ on\ the\ board.\r\n\r\n\ @return\ a\ Cell\ object\ with\ its\ row,\ column,\ and\ value\ attributes\r\n\ \ initialized\ properly\r\n\r\n\ @throws\ IllegalStateException\ when\ the\ board\ has\ no\ empty\ cell\r\n
+comment4.params=dir
+comment4.target=boolean\ slide(pack1024.SlideDirection)
+comment4.text=\r\n\ Slide\ all\ the\ tiles\ in\ the\ board\ in\ the\ requested\ direction\r\n\ @param\ dir\ move\ direction\ of\ the\ tiles\r\n\r\n\ @return\ true\ when\ the\ board\ changes\r\n
+comment5.params=
+comment5.target=java.util.ArrayList\ getNonEmptyTiles()
+comment5.text=\r\n\r\n\ @return\ an\ arraylist\ of\ Cells.\ Each\ cell\ holds\ the\ (row,column)\ and\r\n\ value\ of\ a\ tile\r\n
+comment6.params=
+comment6.target=GameStatus\ getStatus()
+comment6.text=\r\n\ Return\ the\ current\ state\ of\ the\ game\r\n\ @return\ one\ of\ the\ possible\ values\ of\ GameStatus\ enum\r\n
+comment7.params=
+comment7.target=void\ undo()
+comment7.text=\r\n\ Undo\ the\ most\ recent\ action,\ i.e.\ restore\ the\ board\ to\ its\ previous\r\n\ state.\ Calling\ this\ method\ multiple\ times\ will\ ultimately\ restore\r\n\ the\ gam\ to\ the\ very\ first\ initial\ state\ of\ the\ board\ holding\ two\r\n\ random\ values.\ Further\ attempt\ to\ undo\ beyond\ this\ state\ will\ throw\r\n\ an\ IllegalStateException.\r\n\r\n\ @throws\ IllegalStateException\ when\ undo\ is\ not\ possible\r\n
+numComments=8
